@@ -5,9 +5,14 @@
 #include "cmake-build-debug/personal-library.h" // the way to the file must be with directories
 #include "cmake-build-debug/structure.h"// connecting structure to get access to the Person entity
 #include "cmake-build-debug/calculator.h"// connecting personal calculator
-#include <string>//connecting standard library to use string type
+#include <string>//connecting standard library to use string CardRank
+#include <array>
 #include "cmake-build-debug/test.h"// connecting tests
 #include "cmake-build-debug/name-sorter.h"// connecting name-sorter file
+#include "cmake-build-debug/name-is-exist.h"
+#include "cmake-build-debug/hero-has.h"
+#include "cmake-build-debug/teacher-student-system.h"
+#include "cmake-build-debug/blackjack.h"
 void newFunction();
 
 int main() {
@@ -47,5 +52,25 @@ int main() {
     //array creation
     int array[7];
 //    sortNames();
+    char temp [] = "temp";// string, temp.length = 4+1
+    int num (6);
+    int *numBox = &num;
+//    std::cout << sizeof(temp) << std::endl;// temp.length
+//    std::cout << &temp << std::endl;
+//    std::cout << *&temp << std::endl;
+//    std::cout << &num << std::endl;
+//    std::cout << numBox << std::endl;
+//    std::cout << *numBox << std::endl;
+//    std::cout << typeid(&num).name() << std::endl;
+    std::string y [] = {"temp", "temp", "temp"};
+    //isExist(y, sizeof(y)/sizeof(*y)) ?
+    //std::cout << "Your name is in the list." << std::endl:
+    //std::cout << "Your name is not in the list" << std::endl;
+    //checkBag();
+    //startTeacherProgram();
+//    std::array <Card, 52> deck{};
+//    fillOutDeck(&deck);
+//    shuffleDeck(&deck);
+    startGame();
     return test();
 }
